@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Lister</title>
+    <link rel="stylesheet" href="../css/tailwind.css" />
+  </head>
+  <body class="relative min-h-full bg-gray-100 font-poppins text-gray-900">
+    <div
+      id="contentArea"
+      class="relative mx-auto min-h-screen max-w-md px-5 pt-6 pb-40 md:w-2/3"
+    >
+      <div class="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+        <div class="relative mb-2 w-full">
+          <label for="searchInput" class="sr-only"></label>
+          <input
+            type="text"
+            class="block w-full rounded-lg border bg-gray-50 px-4 py-2"
+            name="searchInput"
+            id="searchInput"
+            placeholder="Search item"
+          />
+        </div>
+
+        <form id="addItemForm" class="group flex">
+          <input
+            aria-label="addItemInput"
+            placeholder="Add item"
+            type="text"
+            class="group-focus::border-none w-full rounded-l-lg border bg-gray-50 px-4 group-focus:border-red-400"
+            name="item-input"
+            id="addItemInput"
+          />
+          <input
+            class="cursor-pointer rounded-r-lg bg-blue-700 px-5 py-2 text-white shadow-sm hover:bg-blue-500 focus:bg-blue-800"
+            type="submit"
+            value="Add"
+            id="addItemBtn"
+          />
+        </form>
+        <div class="my-5"><hr class="" /></div>
+        <h2 class="my-4 text-3xl font-semibold">My Items</h2>
+        <ul class="flex flex-col gap-2" id="itemList">
+          <li class="item flex items-center justify-between">
+            Add your wonderful item ✨
+            <button
+              class="btn-delete rounded-lg p-2 text-red-600 hover:bg-gray-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="pointer-events-none h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+          <li class="item flex items-center justify-between">
+            Superproductivity here we go! ✅
+            <button
+              class="btn-delete rounded-lg p-2 text-red-600 hover:bg-gray-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="pointer-events-none h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+          <li class="item flex items-center justify-between">
+            Simple and minimalistic 🍃
+            <button
+              class="btn-delete rounded-lg p-2 text-red-600 hover:bg-gray-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="pointer-events-none h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+          <li class="item flex items-center justify-between">
+            Ice cream 🍦
+            <button
+              class="btn-delete rounded-lg p-2 text-red-600 hover:bg-gray-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="pointer-events-none h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+          <li class="item flex items-center justify-between">
+            Coffee coffee coffee ☕
+            <button
+              class="btn-delete rounded-lg p-2 text-red-600 hover:bg-gray-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="pointer-events-none h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer
+      class="fixed bottom-0 z-10 w-full bg-white py-3 text-center shadow-xl"
+    >
+      <div class="text-sm text-gray-500">
+        <h5>
+          A very basic and minimalist item lister. <br />
+          Made by noice-noise with 💧, ☕, and Tailwind CSS.
+        </h5>
+      </div>
+    </footer>
+    <script src="item-lister.js"></script>
+  </body>
+</html>
